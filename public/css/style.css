@@ -1,0 +1,478 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+.nav {
+    padding: 7px;
+    width: 100%;
+    background-image: linear-gradient(to top, #ececec 0%, #f8f8f8 1%, #eeeeec 31%, #efeeec 75%, #e9e9e7 100%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+.nav .dot {
+    margin-left: -18px;
+    margin-top: -18px;
+}
+
+.brand a:hover {
+    text-decoration: none;
+}
+.brand h4 {
+    line-height: 50px;
+    font-size: 28px;
+    font-family: 'Segoe UI';
+    font-weight: 600;
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    background-clip: text;
+    color: transparent;
+}
+
+.brand span {
+    font-weight: 100;
+    /* color: rgb(255, 179, 0); */
+    background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
+    background-clip: text;
+    color: transparent;
+    font-family: 'Segoe UI Symbol';
+}
+
+
+.konten{
+    width: 100%;
+    height: 700px;
+    background-position-y: 120px;
+    background-image: url(../img/jumbotron.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.isi {
+    width: 100%;
+    text-align: center;
+    padding-top: 100px;
+}
+.isi h1 {
+    font-size: 50px;
+    font-family: 'Segoe UI';
+    text-transform: uppercase;
+    font-weight: bold;
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    background-clip: text;
+    color: transparent;
+}
+.isi .desc {
+    padding-left: 100px;
+    padding-right: 100px;
+    font-size: 20px;
+    font-weight: 100;
+    color: #ffffff;
+    opacity: 0.7;
+    font-family: 'Segoe UI';
+}
+
+.tombol {
+    width: 80px;
+    height: 40px;
+    border: none;
+    color: rgb(82, 82, 82);
+    text-transform: uppercase;
+    font-weight: bold;
+    background-image: linear-gradient(to bottom, #fff1eb 0%, #eec88c 100%);
+    border-radius: 50px 50px;
+}
+.garis {
+    margin: auto;
+    margin-top: 20px;
+    max-width: 40px;
+    border: 2px solid #cf985f;
+    border-radius: 20px 20px;
+}
+.garis1 {
+    margin: auto;
+    margin-top: 20px;
+    max-width: 40px;
+    border: 2px solid white;
+    border-radius: 20px 20px;
+}
+
+
+
+/* IKLAN MENU */
+.iklan-menu {
+    width: 100%;
+    height: 590px;
+}
+.iklan-menu .desc {
+    padding: 80px 60px 0px 60px;
+    text-align: center;
+}
+.iklan-menu .desc h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: 'Segoe UI Symbol';
+    letter-spacing: 6px;
+    background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
+    background-clip: text;
+    color: transparent;
+}
+.iklan-menu .desc p {
+    font-family: 'Segoe UI';
+    opacity: 0.7;
+}
+
+.iklan-menu .menu {
+    margin-top: 50px;
+    width: 100%;
+    height: 320px ;
+    padding: 10px 50px 10px 50px;
+}
+.iklan-menu .menu ul li {
+    width: 250px;
+    height: 300px;
+    display: inline-block;
+}
+.iklan-menu .menu .menu2 {
+    height: 310px;
+    transform: scale(1);
+    transition: .2s ease-out;
+}
+.iklan-menu .menu .menu1, .iklan-menu .menu .menu3 {
+    transform: scale(0.7);
+    transition: .3s ease-in;
+}
+.iklan-menu .menu .menu1 img, .iklan-menu .menu .menu3 img {
+    transition: .5s;
+}
+.iklan-menu .menu h4, .iklan-menu .menu h5 {
+    padding-top: 30px;
+    font-family: 'Bahnschrift';
+    color: #8a8a8a;
+}
+.iklan-menu .menu p {
+    padding-top: 15px;
+    font-family: 'Segoe UI';
+    color: #db7e03;
+    font-weight: bold;
+    font-size: 20px;
+}
+.iklan-menu .menu2:hover {
+    transform: scale(1.1);
+}
+.iklan-menu .menu1:hover,.iklan-menu .menu3:hover {
+    transform: scale(.9);
+}
+
+.iklan-menu .menu .lainnya {
+    margin-top: 30px;
+    padding: 13px;
+    text-transform: uppercase;
+    font-family: 'Century Gothic';
+    color: rgb(236, 236, 236);
+    border: none;
+    background-color: rgb(34, 33, 33);
+    font-weight: 600;
+    border-radius: 5px 5px;
+}
+/* AKHIR IKLAN MENU */
+
+
+
+
+/* FITUR FITUR */
+.fitur{
+    background-image: linear-gradient(-60deg, #cf985f 0%, #cf985d 100%);
+    margin-top: 220px;
+    width: 100%;
+    height: 430px;
+}
+.fitur h2 {
+    font-family: 'Century Gothic';
+    text-transform: uppercase;
+    color: #e9e8e8;
+    font-size: 35px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+.fitur ul {
+    text-align: center;
+    padding-top: 5px;
+}
+.fitur ul li {
+    width: 230px;
+    height: 260px;
+    display: inline-block;
+    margin: 30px;
+    background-image: linear-gradient(to top, #f3f1fa 0%, #eae8ee 1%, #f3e7e9 100%);
+    text-align: center;
+    padding: 45px 65px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.4);
+    border-radius: 20px 20px;
+}
+
+.fitur ul li img {
+    border: 0px solid black;
+}
+.fitur ul li p {
+    margin-top: 15px;
+    color: #8c8e92;
+    font-size: 18px;
+    font-family: 'Bahnschrift';
+    font-weight: bold;
+}
+.fitur div {
+    width: 100px;
+} 
+/* AKHIR FITUR */
+
+.clear {
+    clear: both;
+}
+
+
+/* MENU MENU */
+.judul-menu h3 {
+    font-size: 40px;
+    padding-top: 100px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #d37e0f;
+    letter-spacing: 2px;
+}
+.menu-snack {
+    margin-top: 100px;
+}
+.judul-menu h3 span {
+    color: rgb(74, 185, 10);
+}
+.menu-menu {
+    margin-top: 50px;
+    padding: 5px;
+}
+.menu-menu h3 {
+    text-align: center;
+}
+.menu-menu ul li {
+    height: 400px;
+    background-color: #f1f1f1;
+    padding: 5px;
+    list-style: none;
+    text-align: center;
+    float: left;
+    margin: 5px;
+    margin-top: 75px;
+    margin-left: 10px;
+    border-radius: 5px 5px;
+    /* box-shadow: 1px 1px 10px rgb(170, 170, 170); */
+}
+.permenu {
+    width: 250px;
+    padding: 5px;
+}
+.permenu h4 {
+    padding-top: 10px;
+    font-size: 18px;
+    font-family: 'Asap Condensed', sans-serif;
+    letter-spacing: 1px;
+    padding-top: 35px;
+}
+.permenu p {
+    color: #db7e03;
+    font-family: 'Concert One', cursive;
+    font-size: 18px;
+    /* transform :matrix(0.707107, -0.707107, 0.707107); */
+}
+.permenu a {
+    background-color: transparent;
+    border: none;
+    background-size: cover;
+}
+.permenu a .add_cart {
+    padding-top: -15px;
+}
+
+/* AKHIR MENU MENU */
+
+
+/* LOGIN */
+.body_login{
+    width: 100%;
+    height: 665.5px;
+    float: left;
+}
+.body_login h2 {
+    margin-top: 40px;
+    font-size: 60px;
+    font-family: 'Segoe UI';
+    font-weight: 100;
+}
+.body_login h2 span {
+    background-clip: text;
+    color: #db7e03;
+}
+.body_login center a {
+    margin-left: 340px;
+}
+.kotak_login {
+    width: 400px;
+    height: 470px;
+    background-image: linear-gradient(to top, #eef3f8 0%, white 100%);
+    margin: auto;
+    margin-top: -27px;
+    padding: 30px;
+    text-align: center;
+    border: 1px solid rgb(214, 214, 214);
+    border-radius: 5px 5px;
+    box-shadow: 2px 2px 10px rgb(158, 158, 158);
+}
+.kotak_login .tulisan_login {
+    font-family: 'Segoe UI';
+    font-weight: 100;
+    font-size: 35px;
+}
+.kotak_login .username {
+    font-family: 'Segoe UI';
+    margin-top: 30px;
+    width: 220px;
+    height: 45px;
+    border: 1px solid rgb(202, 202, 202);
+    text-align: center;
+    font-size: 15px;
+    border-radius: 5px 5px;
+}
+.kotak_login .password {
+    border-radius: 5px 5px;
+    font-family: 'Segoe UI';
+    margin-top: 30px;
+    width: 220px;
+    height: 45px;
+    border: 1px solid rgb(202, 202, 202);
+    border-radius: 5px 5px;
+    text-align: center;
+    font-size: 15px;
+}
+.kotak_login .login {   
+    margin-top: 30px;
+    height: 40px;
+    border: none;
+    border-radius:20px 20px;
+    color: #fff;
+    font-family: 'Bahnschrift';
+    font-size: 15px;
+    margin-left: -50px;
+}
+.kotak_login a {
+    float: left;
+    margin-top: 30px;
+    font-family: 'Bahnschrift';
+    line-height: 40px;
+    font-size: 15px;
+    text-decoration: none;
+    width: 175px;
+    height: 40px;
+    color: #e9e9e7;
+    border-radius: 50px;
+    background-color: #111;
+    margin-left: 60px;
+}
+/* AKHIR LOGIN */
+
+
+/* REGISTER */
+.body_register {
+    width: 100%;
+    height: 665.5px;
+    background-image: linear-gradient(-225deg, rgb(255, 233, 193) 0%, #FFE6FA 100%);
+    float: left;
+}
+.body_register h2 {
+    font-size: 70px;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: lighter;
+}
+.body_register h2 span {
+    background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
+    background-clip: text;
+    color: transparent;
+}
+.kotak_register {
+    width: 300px;
+    height: 430px;
+    background-image: linear-gradient(to top, #eef3f8 0%, white 100%);
+    margin: auto;
+    margin-top: 20px;
+    padding: 30px;
+    text-align: center;
+    border: 1px solid rgb(214, 214, 214);
+    box-shadow: 2px 2px 10px rgb(170, 169, 169);
+}
+.kotak_register ul li {
+    list-style: none;
+}
+.kotak_register .tulisan_register {
+    font-family: 'Segoe UI';
+    font-weight: 100;
+    font-size: 35px;
+}
+.kotak_register .username, 
+.kotak_register .nm_user
+ {
+    font-family: 'Segoe UI';
+    margin-top: 20px;
+    width: 160px;
+    height: 40px;
+    border: 1px solid rgb(202, 202, 202);
+    text-align: center;
+    font-size: 13px;
+}
+.kotak_register .password {
+    float: left;
+    font-family: 'Segoe UI';
+    margin-top: 20px;
+    width: 100px;
+    height: 40px;
+    border: none;
+    border: 1px solid rgb(195, 195, 195);
+    text-align: center;
+    font-size: 12px;
+}
+.kotak_register .password2 {
+    font-family: 'Segoe UI';
+    margin-top: 20px;
+    width: 120px;
+    height: 40px;
+    border: 1px solid rgb(195, 195, 195);
+    text-align: center;
+    font-size: 12px;
+}
+.kotak_register .register {
+    margin-top: 20px;
+    height: 40px;
+    border: none;
+    border-radius:20px 20px;
+    color: #fff;
+    font-family: 'Bahnschrift';
+    font-size: 15px;
+}
+.kotak_register li a {
+    float:left;
+    margin-top: 20px;
+    font-family: 'Bahnschrift';
+    line-height: 40px;
+    display: block;
+    font-size: 13px;
+    text-decoration: none;
+    width: 175px;
+    height: 40px;
+    color: #e9e9e7;
+    border-radius: 50px;
+    background-color: #111;
+}
+/* AKHIR REGISTER */
